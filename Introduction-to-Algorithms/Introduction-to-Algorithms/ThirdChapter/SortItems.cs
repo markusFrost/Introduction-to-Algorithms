@@ -11,6 +11,28 @@ namespace Introduction_to_Algorithms.ThirdChapter
     {
         private const int NOT_FOUND = -1;
 
+        public static int RecursiveBinarySearch(int[] a, int p, int r, int x)
+        {
+            if (p > r)
+            {
+                return NOT_FOUND;
+            }
+            int q = (p + r) / 2;
+
+            if (a[q] == x)
+            {
+                return q;
+            }
+            else if (a[q] > x)
+            {
+                return RecursiveBinarySearch(a, p, q - 1, x);
+            }
+            else
+            {
+                return RecursiveBinarySearch(a, q + 1, r, x);
+            }
+        }
+
         public static int BinarySearch(int[] a, int n, int x)
         {
             int p = 0;

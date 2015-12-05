@@ -9,6 +9,25 @@ namespace Introduction_to_Algorithms.ThirdChapter
 {
     public class TestSortItems
     {
+
+        public static void TestRecursiveBinarySearch()
+        {
+            int n = 10;
+            int[] a = generateArray(n);
+            SortItems.SelectionSort(ref a, n);
+            TestMethods.outPutArray(a, n);
+
+            Random rand = new Random();
+            int x = a[rand.Next(1, n)];
+
+            int resultIndex = SortItems.RecursiveBinarySearch(a, 0, n - 1, x) + 1;
+
+            Console.WriteLine("x = " + x + " index = " + resultIndex);
+
+
+        }
+
+
         public static void TestBinarySearch()
         {
             int n = 10;
