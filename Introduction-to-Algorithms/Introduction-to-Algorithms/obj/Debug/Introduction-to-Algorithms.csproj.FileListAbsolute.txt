@@ -1,0 +1,6 @@
+C:\Users\Андрей\Documents\GitHub\Introduction-to-Algorithms\Introduction-to-Algorithms\Introduction-to-Algorithms\bin\Debug\Introduction-to-Algorithms.exe.config
+C:\Users\Андрей\Documents\GitHub\Introduction-to-Algorithms\Introduction-to-Algorithms\Introduction-to-Algorithms\bin\Debug\Introduction-to-Algorithms.exe
+C:\Users\Андрей\Documents\GitHub\Introduction-to-Algorithms\Introduction-to-Algorithms\Introduction-to-Algorithms\bin\Debug\Introduction-to-Algorithms.pdb
+C:\Users\Андрей\Documents\GitHub\Introduction-to-Algorithms\Introduction-to-Algorithms\Introduction-to-Algorithms\obj\Debug\Introduction-to-Algorithms.csprojResolveAssemblyReference.cache
+C:\Users\Андрей\Documents\GitHub\Introduction-to-Algorithms\Introduction-to-Algorithms\Introduction-to-Algorithms\obj\Debug\Introduction-to-Algorithms.exe
+C:\Users\Андрей\Documents\GitHub\Introduction-to-Algorithms\Introduction-to-Algorithms\Introduction-to-Algorithms\obj\Debug\Introduction-to-Algorithms.pdb
