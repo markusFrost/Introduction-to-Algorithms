@@ -12,7 +12,7 @@ namespace Introduction_to_Algorithms
         static void Main(string[] args)
         {
 
-            TestMethods.TestSentitelLinearSearch();
+            TestMethods.TestRecursiveLinearSearch();
             //TestMethods.TestBetterLinearSearch();
 
             //TestMethods.TestLinearSearch();

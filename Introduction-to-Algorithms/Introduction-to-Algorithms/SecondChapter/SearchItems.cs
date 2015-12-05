@@ -12,6 +12,23 @@ namespace Introduction_to_Algorithms.SecondChapter
 
         // a - array, n - count of items, x - searchable value
 
+        public static int RecursiveLinearSearch(int[] a, int n, int i, int x)
+        {
+            if ( i >= n)
+            {
+                return NOT_FOUND;
+            }
+            else if (a[i] == x)
+            {
+                return i;
+            }
+            else
+            {
+                return RecursiveLinearSearch(a, n, i + 1, x);
+            }
+
+        }
+
         public static int SentitelLinearSearch(int[] a, int n, int x)
         {
             int last = a[n - 1];
