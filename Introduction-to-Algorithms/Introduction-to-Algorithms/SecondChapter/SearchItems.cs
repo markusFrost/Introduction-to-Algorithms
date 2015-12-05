@@ -8,12 +8,33 @@ namespace Introduction_to_Algorithms.SecondChapter
 {
     public class SearchItems
     {
+       private const int NOT_FOUND = -1;
+
         // a - array, n - count of items, x - searchable value
+
+        public static int SentitelLinearSearch(int[] a, int n, int x)
+        {
+            int last = a[n - 1];
+            a[n - 1] = x;
+
+            int i = 0;
+            while (a[i] != x)
+            {
+                i++;
+            }
+
+            a[n - 1] = last;
+
+            if (i < n || a[n - 1] == x)
+            {
+                return i;
+            }
+
+            return NOT_FOUND;
+        }
 
         public static int BetterLinearSearch(int[] a, int n, int x)
         {
-            const int NOT_FOUND = -1;
-
             for (int i = 0; i < n; i++)
             {
                 if (a[i] == x)
@@ -27,7 +48,6 @@ namespace Introduction_to_Algorithms.SecondChapter
 
         public static int LinearSearch(int[] a, int n, int x)
         {
-            const int NOT_FOUND = -1;
             int answer = NOT_FOUND;
 
             for ( int i = 0; i < n; i++)

@@ -11,7 +11,9 @@ namespace Introduction_to_Algorithms
     {
         static void Main(string[] args)
         {
-            TestMethods.TestBetterLinearSearch();
+
+            TestMethods.TestSentitelLinearSearch();
+            //TestMethods.TestBetterLinearSearch();
 
             //TestMethods.TestLinearSearch();
 
