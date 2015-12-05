@@ -9,6 +9,23 @@ namespace Introduction_to_Algorithms.ThirdChapter
 {
     public class TestSortItems
     {
+        public static void TestBinarySearch()
+        {
+            int n = 10;
+            int[] a = generateArray(n);
+            SortItems.SelectionSort(ref a, n);
+            TestMethods.outPutArray(a, n);
+
+            Random rand = new Random();
+            int x = a[rand.Next(1, n)];
+
+            int resultIndex = SortItems.BinarySearch(a, n, x) + 1;
+
+            Console.WriteLine("x = " + x + " index = " + resultIndex);
+
+
+        }
+
         public static void TestSelectionSort()
         {
             int n = 10;

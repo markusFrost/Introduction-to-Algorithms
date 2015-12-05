@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Introduction_to_Algorithms.ThirdChapter;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,8 @@ namespace Introduction_to_Algorithms.SecondChapter
             {
                 a[i] = rand.Next(1, 50);
             }
+
+           
 
             outPutArray(a, n);
 

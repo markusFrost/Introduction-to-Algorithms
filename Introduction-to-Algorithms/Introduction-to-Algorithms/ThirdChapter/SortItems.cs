@@ -9,6 +9,35 @@ namespace Introduction_to_Algorithms.ThirdChapter
 {
     public class SortItems
     {
+        private const int NOT_FOUND = -1;
+
+        public static int BinarySearch(int[] a, int n, int x)
+        {
+            int p = 0;
+            int r = n - 1;
+            int q = 0;
+
+            while (p <= r)
+            {
+                q = (p + r) / 2;
+
+                Console.WriteLine(" q = " + q);
+                if (a[q] == x)
+                {
+                    return q;
+                }
+                else if (a[q] > x)
+                {
+                    r = q - 1;
+                }
+                else
+                {
+                    p = q + 1;
+                }
+            }
+            return NOT_FOUND;
+        }
+
         public static void SelectionSort ( ref int[]a, int n)
         {
             int smallest = 0;
