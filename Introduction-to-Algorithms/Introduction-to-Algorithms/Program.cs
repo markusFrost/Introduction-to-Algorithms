@@ -1,4 +1,5 @@
 ﻿using Introduction_to_Algorithms.SecondChapter;
+using Introduction_to_Algorithms.ThirdChapter;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,7 @@ namespace Introduction_to_Algorithms
         static void Main(string[] args)
         {
 
+            TestSortItems.TestSelectionSort();
             //TestMethods.TestRecursiveLinearSearch();
             //TestMethods.TestBetterLinearSearch();
             //TestMethods.TestLinearSearch();

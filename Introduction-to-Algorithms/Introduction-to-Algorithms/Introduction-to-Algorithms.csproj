@@ -45,6 +45,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SecondChapter\SearchItems.cs" />
     <Compile Include="SecondChapter\TestMethods.cs" />
+    <Compile Include="ThirdChapter\SortItems.cs" />
+    <Compile Include="ThirdChapter\TestSortItems.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

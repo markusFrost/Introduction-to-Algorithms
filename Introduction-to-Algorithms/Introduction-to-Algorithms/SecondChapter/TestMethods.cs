@@ -92,7 +92,7 @@ namespace Introduction_to_Algorithms.SecondChapter
             Console.WriteLine(" x = " + x + " index = " + resultIndex);
         }
 
-        private static void outPutArray(int[] a, int n)
+        public static void outPutArray(int[] a, int n)
         {
             for (int i = 0; i < n; i++)
             {
