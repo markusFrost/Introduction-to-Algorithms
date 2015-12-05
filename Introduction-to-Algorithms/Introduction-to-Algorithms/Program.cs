@@ -12,9 +12,8 @@ namespace Introduction_to_Algorithms
         static void Main(string[] args)
         {
 
-            TestMethods.TestRecursiveLinearSearch();
+            //TestMethods.TestRecursiveLinearSearch();
             //TestMethods.TestBetterLinearSearch();
-
             //TestMethods.TestLinearSearch();
 
             Console.ReadKey();
