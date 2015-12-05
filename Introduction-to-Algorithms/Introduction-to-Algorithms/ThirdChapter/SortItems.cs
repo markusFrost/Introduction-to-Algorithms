@@ -21,7 +21,6 @@ namespace Introduction_to_Algorithms.ThirdChapter
             {
                 q = (p + r) / 2;
 
-                Console.WriteLine(" q = " + q);
                 if (a[q] == x)
                 {
                     return q;
