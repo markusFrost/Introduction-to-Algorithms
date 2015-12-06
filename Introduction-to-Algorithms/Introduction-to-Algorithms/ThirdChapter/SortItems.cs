@@ -11,6 +11,25 @@ namespace Introduction_to_Algorithms.ThirdChapter
     {
         private const int NOT_FOUND = -1;
 
+        public static void InsertionSort( ref int[] a, int n)
+        {
+            int key = 0;
+            int j = 0;
+
+            for (int i = 1; i < n; i++)
+            {
+                key = a[i];
+                j = i - 1;
+
+                while (j > 0 && a[j] > key)
+                {
+                    a[j + 1] = a[j];
+                    j--;
+                }
+                a[j + 1] = key;
+            }
+        }
+
         public static int RecursiveBinarySearch(int[] a, int p, int r, int x)
         {
             if (p > r)

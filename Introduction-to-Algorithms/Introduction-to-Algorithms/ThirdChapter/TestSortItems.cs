@@ -10,6 +10,17 @@ namespace Introduction_to_Algorithms.ThirdChapter
     public class TestSortItems
     {
 
+        public static void TestInsertionSort()
+        {
+            int n = 10;
+            int[] a = generateArray(n);
+            TestMethods.outPutArray(a, n);
+
+            SortItems.InsertionSort(ref a, n);
+
+            TestMethods.outPutArray(a, n);
+        }
+
         public static void TestRecursiveBinarySearch()
         {
             int n = 10;

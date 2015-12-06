@@ -13,7 +13,8 @@ namespace Introduction_to_Algorithms
         static void Main(string[] args)
         {
 
-            TestSortItems.TestRecursiveBinarySearch();
+            TestSortItems.TestInsertionSort();
+            //TestSortItems.TestRecursiveBinarySearch();
             //TestSortItems.TestSelectionSort();
             //TestMethods.TestRecursiveLinearSearch();
             //TestMethods.TestBetterLinearSearch();
