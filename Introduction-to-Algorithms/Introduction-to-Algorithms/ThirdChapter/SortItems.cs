@@ -11,6 +11,41 @@ namespace Introduction_to_Algorithms.ThirdChapter
     {
         private const int NOT_FOUND = -1;
 
+        public static void QuickSort(ref int[] a, int p, int r)
+        {
+            if (p >= r)
+            {
+                return;
+            }
+
+            int q = Partition(ref a, p, r);
+
+            QuickSort(ref a, p, q - 1);
+            QuickSort(ref a, q + 1, r);
+        }
+
+        private static int Partition(ref int[] a, int p, int r)
+        {
+            int q = p;
+            for (int u = p; u <= r - 1; u++)
+            {
+                if (a[u] <= a[r])
+                {
+                    int c = a[q];
+                    a[q] = a[u];
+                    a[u] = c;
+
+                    q++;
+                }
+            }
+
+            int swap = a[q];
+            a[q] = a[r];
+            a[r] = swap;
+
+            return q;
+        }
+
         public static void MergeSort(ref int[] a, int p, int r)
         {
             if (p >= r)
