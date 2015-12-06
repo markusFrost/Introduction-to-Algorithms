@@ -11,12 +11,70 @@ namespace Introduction_to_Algorithms.ThirdChapter
     {
         private const int NOT_FOUND = -1;
 
-        public static void InsertionSort( ref int[] a, int n)
+        public static void MergeSort(ref int[] a, int p, int r)
+        {
+            if (p >= r)
+            {
+                return;
+            }
+            int q = (p + r) / 2 ;
+
+            MergeSort(ref a, p, q);
+            MergeSort(ref a, q + 1, r);
+
+            Merge( ref a, p, q, r);
+        }
+
+        private static void Merge( ref int[] a, int p, int q, int r)
+        {
+            int n1 = q - p + 1;
+            int n2 = r - q;
+
+            int[] b = new int[n1 + 1];
+            int[] c = new int[n2 + 1];
+
+            int index = 0;
+
+            for (int position = p; position <= q; position++)
+            {
+                b[index] = a[position];
+                index++;
+            }
+            b[index] = Int32.MaxValue;
+
+            index = 0;
+
+            for (int position = (q + 1); position <= r; position++)
+            {
+                c[index] = a[position];
+                index++;
+            }
+            c[index] = Int32.MaxValue;
+
+            int i, j;
+            i = j = 0;
+
+            for (int k = p; k <=  r; k++)
+            {
+                if (b[i] <= c[j])
+                {
+                    a[k] = b[i];
+                    i++;
+                }
+                else
+                {
+                    a[k] = c[j];
+                    j++;
+                }
+            }
+        }
+
+        public static void InsertionSort(ref int[] a, int n)
         {
             int key = 0;
             int j = 0;
 
-            for (int i = 1; i < n; i++)
+            for (int i = 0; i < n; i++)
             {
                 key = a[i];
                 j = i - 1;

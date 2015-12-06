@@ -10,6 +10,17 @@ namespace Introduction_to_Algorithms.ThirdChapter
     public class TestSortItems
     {
 
+        public static void TestMergeSort()
+        {
+            int n = 10;
+            int[] a = generateArray(n);
+            TestMethods.outPutArray(a, n);
+
+            SortItems.MergeSort(ref a, 0, n - 1 );
+
+            TestMethods.outPutArray(a, n);
+        }
+
         public static void TestInsertionSort()
         {
             int n = 10;
