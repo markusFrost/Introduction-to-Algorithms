@@ -8,7 +8,7 @@ namespace Introduction_to_Algorithms.FifthChapter
 {
     public class DirectedGrapthSort
     {
-        public static void TopologicalSort(int n, int[,] graph)
+        public static List<int> TopologicalSort(int n, int[,] graph)
         {
             int[] in_degree = new int[n];
 
@@ -37,7 +37,28 @@ namespace Introduction_to_Algorithms.FifthChapter
                 }
             }
 
-            int a = 0;
+            List<int> linearOrdering = new List<int>();
+
+            while (next.Count > 0)
+            {
+                int u = next[0];
+                next.RemoveAt(0);
+
+                linearOrdering.Add(u);
+                List<int> listAdjacentVertex = GetAdjacentVertex(u, n, graph);
+
+                foreach (int adjacentVertex in listAdjacentVertex)
+                {
+                    in_degree[adjacentVertex]--;
+                    if (in_degree[adjacentVertex] == 0)
+                    {
+                        next.Insert(0, adjacentVertex);
+                    }
+                }
+                
+            }
+
+            return linearOrdering;
 
             
             

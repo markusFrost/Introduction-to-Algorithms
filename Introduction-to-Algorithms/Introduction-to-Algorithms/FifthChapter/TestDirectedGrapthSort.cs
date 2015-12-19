@@ -108,7 +108,12 @@ namespace Introduction_to_Algorithms.FifthChapter
             }
 
 
-            DirectedGrapthSort.TopologicalSort(n, graph);
+          List<int> linearOrdering =   DirectedGrapthSort.TopologicalSort(n, graph);
+
+          for (int i = 0; i < linearOrdering.Count; i++)
+          {
+              Console.Write(linearOrdering[i] + "\t");
+          }
 
             
 
