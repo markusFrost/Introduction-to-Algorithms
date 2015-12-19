@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FifthChapter\DirectedGrapthSort.cs" />
+    <Compile Include="FifthChapter\TestDirectedGrapthSort.cs" />
     <Compile Include="FourthChapter\LowBoundrySort.cs" />
     <Compile Include="FourthChapter\TestLowBoundrySort.cs" />
     <Compile Include="Program.cs" />
